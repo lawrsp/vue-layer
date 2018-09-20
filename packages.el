@@ -50,7 +50,7 @@
     (add-hook 'vue-mode-hook #'lsp-vue-mmm-enable)
     :config
     (when vue-format-before-save
-      (add-hook 'before-save-hook 'lsp-format-buffer))))
+      (add-hook 'before-save-hook 'spacemacs/vue-format-before-save))))
 
 (defun vue/post-init-company-lsp ()
   (spacemacs|add-company-backends
